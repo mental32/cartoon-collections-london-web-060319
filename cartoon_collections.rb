@@ -15,7 +15,7 @@ end
 def find_the_cheese(c)
   cheese_types = ["cheddar", "gouda", "camembert"]
 
-  c.each do |t|
+  for t in c do
     if cheese_types.include? c
       return cheese_types.select { |v| v == c }
     end
