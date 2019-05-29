@@ -17,7 +17,7 @@ def find_the_cheese(c)
 
   for t in c do
     if cheese_types.include? t
-      return cheese_types.select { |v| v == c }
+      return cheese_types.select { |v| v == t }
     end
   end
 
